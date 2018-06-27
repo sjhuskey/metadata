@@ -1,0 +1,59 @@
+<rdf:RDF xml:lang="en" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+  
+  <!-- Value of @rdf:about should be field_dll_page_link. -->
+  <madsrdf:Title rdf:about="field_dll_page_link">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    
+    <!-- Value should be 	field_work_name. -->
+    <madsrdf:authoritativeLabel>field_work_name</madsrdf:authoritativeLabel>
+    <madsrdf:hasVariant>
+      <madsrdf:Title>
+        
+        <!-- There may be > 1 alternative titles. -->
+        <madsrdf:variantLabel xml:lang="en">field_alternative_title</madsrdf:variantLabel>
+      </madsrdf:Title>
+    </madsrdf:hasVariant>
+    <madsrdf:hasRelatedAuthority>
+      
+      <!-- It would be really nifty to have the URL of the entity referenced through field_author as the value of @rdf:resource. -->
+      <madsrdf:PersonalName rdf:about="field_author">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+        
+        <!-- It would be super awesome to get the authorized name of the entity referenced through field_author. -->
+        <madsrdf:authoritativeLabel xml:lang="en">field_author</madsrdf:authoritativeLabel>
+      </madsrdf:PersonalName>
+    </madsrdf:hasRelatedAuthority>
+    <madsrdf:hasRelatedAuthority>
+      
+      <!-- It would be really nifty to have the URL of the entity referenced through field_attributed_to as the value of @rdf:resource. -->
+      <madsrdf:PersonalName rdf:about="field_attributed_to"> 
+        <madsrdf:editorialNote>This work has been attributed by some to the following author</madsrdf:editorialNote>
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+        
+        <!-- It would be super awesome to get the authorized name of the entity referenced through field_attributed_to. -->
+        <madsrdf:authoritativeLabel xml:lang="en">field_attributed_to</madsrdf:authoritativeLabel>
+      </madsrdf:PersonalName>    
+    </madsrdf:hasRelatedAuthority>
+    
+    <!-- This field should appear only if there is data in the field field_dubious_spurious_attributi. -->
+    <madsrdf:hasChararacteristic>field_dubious_spurious_attributi</madsrdf:hasChararacteristic>
+    
+    <!-- Every work will have a DLL Identifier, but the other fields are optional. -->
+    <madsrdf:hasIdentifier>field_dll_identifier</madsrdf:hasIdentifier>
+    <madsrdf:hasIdentifier>field_identifier</madsrdf:hasIdentifier>
+    <madsrdf:hasIdentifier>field_phi_number</madsrdf:hasIdentifier>
+    <madsrdf:hasIdentifier>field_stoa_number</madsrdf:hasIdentifier>
+    
+    <!-- This doesn't exist yet. -->
+    <madsrdf:hasIdentifier>field_cts_urn</madsrdf:hasIdentifier>
+  
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo>
+        <ri:creationDate>[node:created:short]</ri:creationDate>
+        <ri:recordIdentifier>[node:feeds-item-guid]</ri:recordIdentifier>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+  </madsrdf:Title>
+</rdf:RDF>

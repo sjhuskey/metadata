@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mads:mads xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mods="http://www.loc.gov/mods/v3"
+    xmlns:mads="http://www.loc.gov/mads/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/mads/ http://www.loc.gov/standards/mads/mads.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-2.xsd"
+    version="2.0">
+    <mads:authority>
+        <!-- Value of @authorityURI should be field_dll_page_link. -->
+        <mads:titleInfo authorityURI="field_dll_page_link">
+            <!-- Value should be field_work_name. -->
+            <mads:title>field_work_name</mads:title>
+        </mads:titleInfo>
+    </mads:authority>
+
+    <!-- There may be > 1 alternative titles. -->
+    <mads:variant type="other">
+        <mads:titleInfo>
+            <mads:title>field_alternative_title</mads:title>
+        </mads:titleInfo>
+    </mads:variant>
+
+    <mads:note type="spurious"><!-- This field should appear only if there is data in field_dubious_spurious_attributi. --></mads:note>
+    <mads:note type="creator">Author: <!-- It would be great to have the authorized name field as the value for field_author here. --></mads:note>
+    <mads:note type="attribution">Attributed to: <!-- It would be really nifty to have the URL of the entity referenced through field_attributed_to as the value--></mads:note>
+
+    <!-- Every work will have a DLL Identifier, but the other fields are optional. -->
+    <mads:identifier type="dll">field_dll_identifier</mads:identifier>
+    <mads:identifier type="phi-stoa-dll">field_identifier</mads:identifier>
+    <mads:identifier type="phi">field_phi_number</mads:identifier>
+    <mads:identifier type="stoa">field_stoa_number</mads:identifier>
+    <!-- This doesn't exist yet. -->
+    <mads:identifier type="dll">field_cts_urn</mads:identifier>
+    
+
+    <mads:recordInfo>
+        <mads:recordContentSource authority="">DLC<!-- Don't know what to put here. --></mads:recordContentSource>
+        <mads:recordCreationDate encoding="iso8601">[node:created:short]</mads:recordCreationDate>
+        <mads:recordChangeDate encoding="iso8601">[node:changed:short]</mads:recordChangeDate>
+        <mads:recordIdentifier>[node:feeds-item-guid]</mads:recordIdentifier>
+    </mads:recordInfo>
+</mads:mads>
