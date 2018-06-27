@@ -19,7 +19,7 @@
         </dcterms:publisher>
         <dcterms:date>field_date</dcterms:date>
         <dcterms:identifier>
-            <dcterms:URI> field_original_uri </dcterms:URI>
+            <dcterms:URI> field_original_uri</dcterms:URI>
         </dcterms:identifier>
         <foaf:Agent>
             <foaf:Organization>
@@ -27,10 +27,10 @@
             </foaf:Organization>
         </foaf:Agent>
         <dcterms:identifier>
-            <dcterms:URI> field_dll_uri </dcterms:URI>
+            <dcterms:URI> field_dll_uri</dcterms:URI>
         </dcterms:identifier>
         <dcterms:identifier>
-            <dcterms:URI> field_dll_identifier </dcterms:URI>
+            <dcterms:URI> field_dll_identifier</dcterms:URI>
         </dcterms:identifier>
         <dcterms:rights>field_rights</dcterms:rights>
     </dcterms:BibliographicResource>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xml:lang="en" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:foaf="http://xmlns.com/foaf/spec/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
+    <!-- Value of @rdf:about should be field_dll_uri -->
+    <rdf:Description rdf:about="field_dll_uri">
+        <dcterms:title>field_record_title</dcterms:title>
+        <dcterms:type>web page</dcterms:type>
+        <dcterms:creator><!-- It would be great to use the field_authorized_name value for the entity referenced through field_dll_creator --></dcterms:creator>
+        <dcterms:creator>field_creator</dcterms:creator>
+        <dcterms:source>field_source_edition</dcterms:source>
+        <dcterms:identifier>
+            <dcterms:URI>
+                <rdf:value>field_source_work</rdf:value>
+            </dcterms:URI>
+        </dcterms:identifier>
+        <!-- field_publisher might not have a value -->
+        <dcterms:publisher>field_publisher </dcterms:publisher>
+        <dcterms:date>field_access_date</dcterms:date>
+        <foaf:Agent>
+            <foaf:Organization>
+                <foaf:name>field_repository_source</foaf:name>
+            </foaf:Organization>
+        </foaf:Agent>
+        <dcterms:rights>field_rights</dcterms:rights>      
+        <dcterms:identifier>
+            <dcterms:URI>
+                <rdf:value>field_dll_uri</rdf:value>
+            </dcterms:URI>
+        </dcterms:identifier>
+        <dcterms:identifier>
+            <dcterms:URI>
+                <rdf:value>field_dll_identifier</rdf:value>
+            </dcterms:URI>
+        </dcterms:identifier>
+    </rdf:Description>
+</rdf:RDF>
