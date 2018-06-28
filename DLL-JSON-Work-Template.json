@@ -1,0 +1,52 @@
+{
+    "@context": {
+        "madsrdf": "http://www.loc.gov/mads/rdf/v1#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "About": {
+            "@id": "rdf:about",
+            "@type": "@id"
+        },
+        "Title": "madsrdf:Title",
+        "Variant": "madsrdf:hasVariant",
+        "VariantTitle": "madsrdf:variantLabel",
+        "Author": "madsrdf:Authority",
+        "AuthorName": {
+            "@id": "madsrdf:PersonalName",
+            "@type": "@id"
+        },
+        "AuthorizedName": "madsrdf:authoritativeLabel",
+        "Attribution": "madsrdf:editorialNote",
+        "AttributedName": {
+            "@id": "madsrdf:PersonalName",
+            "@type": "@id"
+        },
+        "AttributedAuthorName": "madsrdf:Name",
+        "Dubious": "madsrdf:hasChararacteristic",
+        "Identifier": {
+            "@id": "madsrdf:Identifier",
+            "@type": "@id"
+        },
+        "DLLid": "madsrdf:idValue",
+        "STOAid": "madsrdf:idValue",
+        "PHIid": "madsrdf:idValue",
+        "CTS-ID": "madsrdf:idValue",
+        "CTS-URN": "madsrdf:idValue"
+    },
+    "@id": "field_dll_page_link",
+    "Title": "field_work_name",
+    "Variant": {"VariantTitle": "[field_alternative_title]"},
+    "Author": {"AuthorName": {"AuthorizedName": "field_author"}},
+    "AttributedName": {"AttributedName": {
+        "Dubious": "field_dubious_spurious_attributi",
+        "Attribution": "This work has been attributed by some to this author.",
+        "AttributedAuthorName": "field_attributed_to"
+    }},
+    "Identifier": {
+        "DLLid": "field_dll_identifier",
+        "STOAid": "field_stoa_number",
+        "PHIid": "field_phi_number",
+        "CTS-ID": "field_identifier",
+        "CTS-URN": "field_cts_urn"
+    }
+}

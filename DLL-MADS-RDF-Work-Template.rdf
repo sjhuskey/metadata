@@ -25,9 +25,8 @@
       <madsrdf:PersonalName rdf:about="field_attributed_to">
         <madsrdf:editorialNote>This work has been attributed by some to the following
           author</madsrdf:editorialNote>
-        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
         <!-- It would be super awesome to get the authorized name of the entity referenced through field_attributed_to. -->
-        <madsrdf:authoritativeLabel xml:lang="en">field_attributed_to</madsrdf:authoritativeLabel>
+        <madsrdf:Name xml:lang="en">field_attributed_to</madsrdf:Name>
       </madsrdf:PersonalName>
     </madsrdf:hasRelatedAuthority>
     <!-- This field should appear only if there is data in the field field_dubious_spurious_attributi. -->
@@ -40,14 +39,6 @@
       <madsrdf:Identifier>
         <madsrdf:idScheme>DLL</madsrdf:idScheme>
         <madsrdf:idValue>field_dll_identifier</madsrdf:idValue>
-      </madsrdf:Identifier>
-    </madsrdf:hasIdentifier>
-    
-    <!-- PHI-Stoa -->
-    <madsrdf:hasIdentifier>
-      <madsrdf:Identifier>
-        <madsrdf:idScheme>Identifier</madsrdf:idScheme>
-        <madsrdf:idValue>field_identifier</madsrdf:idValue>
       </madsrdf:Identifier>
     </madsrdf:hasIdentifier>
     
@@ -67,7 +58,15 @@
       </madsrdf:Identifier>
     </madsrdf:hasIdentifier>
     
-    <!-- CTS (Doesn't exist yet) -->
+    <!-- CTS-ID -->
+    <madsrdf:hasIdentifier>
+      <madsrdf:Identifier>
+        <madsrdf:idScheme>CTS-ID</madsrdf:idScheme>
+        <madsrdf:idValue>field_identifier</madsrdf:idValue>
+      </madsrdf:Identifier>
+    </madsrdf:hasIdentifier>
+    
+    <!-- CTS-URN (Doesn't exist yet) -->
     <madsrdf:hasIdentifier>
       <madsrdf:Identifier>
         <madsrdf:idScheme>CTS</madsrdf:idScheme>
