@@ -1,37 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xml xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/spec/"
-    xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
-    <dcterms:BibliographicResource>
-        <dcterms:title>field_record_title</dcterms:title>
-        <dcterms:type>digitized book</dcterms:type>
-        <dcterms:creator><!-- It would be great to use the field_authorized_name value for the entity referenced through field_dll_creator --></dcterms:creator>
-        <!-- There may be > 1 contributor -->
-        <dcterms:contributor>field_contributor</dcterms:contributor>
-        <dcterms:publisher>
-            <foaf:Organization>
-                <vcard:adr>
-                    <vcard:Address>
-                        <vcard:locality>field_place_of_publication</vcard:locality>
-                    </vcard:Address>
-                </vcard:adr>
-                <foaf:name>field_publisher</foaf:name>
-            </foaf:Organization>
-        </dcterms:publisher>
-        <dcterms:date>field_date</dcterms:date>
-        <dcterms:identifier>
-            <dcterms:URI> field_original_uri</dcterms:URI>
-        </dcterms:identifier>
-        <foaf:Agent>
-            <foaf:Organization>
-                <foaf:name>field_repository_source</foaf:name>
-            </foaf:Organization>
-        </foaf:Agent>
-        <dcterms:identifier>
-            <dcterms:URI> field_dll_uri</dcterms:URI>
-        </dcterms:identifier>
-        <dcterms:identifier>
-            <dcterms:URI> field_dll_identifier</dcterms:URI>
-        </dcterms:identifier>
-        <dcterms:rights>field_rights</dcterms:rights>
-    </dcterms:BibliographicResource>
+<xml xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/spec/" xmlns:frbr="http://purl.org/vocab/frbr/core#"
+    xmlns:schema="http://schema.org/">
+    <dcterms:title>field_record_title</dcterms:title>
+    <dcterms:type>digitized book</dcterms:type>
+    <dcterms:creator><!-- It would be great to use the field_authorized_name value for the entity referenced through field_dll_creator --><!-- Also, there may be > 1 creator. --></dcterms:creator>
+    <!-- There may be > 1 contributor -->
+    <dcterms:contributor>field_contributor</dcterms:contributor>
+    <dcterms:publisher>
+        <foaf:Organization>
+            <schema:City>field_place_of_publication</schema:City>
+            <foaf:name>field_publisher</foaf:name>
+        </foaf:Organization>
+    </dcterms:publisher>
+    <dcterms:date>field_date</dcterms:date>
+    <!-- It would be nice to use the URL of the entity referenced through field_work_reference here. -->
+    <frbr:exemplarOf>field_work_reference</frbr:exemplarOf>
+    <dcterms:identifier>
+        <dcterms:URI> field_original_uri</dcterms:URI>
+    </dcterms:identifier>
+    <schema:Library>field_repository_source</schema:Library>
+    <dcterms:identifier>
+        <dcterms:URI> field_dll_uri</dcterms:URI>
+    </dcterms:identifier>
+    <dcterms:identifier>
+        <dcterms:URI> field_dll_identifier</dcterms:URI>
+    </dcterms:identifier>
+    <dcterms:rights>field_rights</dcterms:rights>
 </xml>

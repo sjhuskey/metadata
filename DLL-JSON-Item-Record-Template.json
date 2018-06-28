@@ -1,0 +1,32 @@
+{
+  "@context": {
+      "dcterms": "http://purl.org/dc/terms/",
+      "foaf": "http://xmlns.com/foaf/spec/",
+      "frbr": "http://purl.org/vocab/frbr/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "schema": "http://schema.org/",
+      "Title": "dcterms:title",
+      "Author": "dcterms:creator",
+      "Source": "frbr:exemplarOf",
+      "Editor": "dcterms:contributor",
+      "Publisher": "dcterms:publisher",
+      "Place": "schema:City",
+      "Date": "dcterms:date",
+      "OriginalURI": "dcterms:URI",
+      "Repository": "schema:Library",
+      "DLLid": "dcterms:identifier",
+      "Rights": "dcterms:rights"      
+  },
+  "@id": "field_dll_page_link",
+  "Title": "field_record_title",
+  "Author": "[field_authorized_name]",
+  "Editor": "[field_contributor]",
+  "Publisher": "field_publisher",
+  "Place": "field_place_of_publication",
+  "Date": "field_date",
+  "Source": "field_work_reference",
+  "OriginalURI": "field_original_uri",
+  "Repository": "field_repository_source",
+  "DLLid": "field_dll_id",
+  "Rights": "field_rights"  
+}

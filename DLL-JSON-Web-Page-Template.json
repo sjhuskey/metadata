@@ -1,0 +1,33 @@
+{
+    "@context": {
+        "@base": "https://hobbes.rccc.ou.edu/dll-biblio",
+        "dcterms": "http://purl.org/dc/terms/",
+        "foaf": "http://xmlns.com/foaf/spec/",
+        "frbr": "http://purl.org/vocab/frbr/core#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "schema": "http://schema.org/",
+        "Title": "dcterms:title",
+        "Author": "dcterms:creator",
+        "SourceEdition": "dcterms:source",
+        "EditionURI": "dcterms:URI",
+        "Publisher": "dcterms:publisher",
+        "AccessDate": "dcterms:date",
+        "Repository": "schema:WebSite",
+        "DLLAuthor": "dcterms:creator",
+        "Source": "frbr:exemplarOf",
+        "DLLid": "dcterms:identifier",
+        "Rights": "dcterms:rights"
+    },
+    "@id": "field_dll_page_link",
+    "Title": "field_record_title",
+    "Author": "field_creator",
+    "DLLAuthor": "field_dll_creator",
+    "SourceEdition": "field_source_edition",
+    "EditionURI": "field_source_work",
+    "Publisher": "field_publisher",
+    "AccessDate": "field_access_date",
+    "Repository": "field_repository_source",
+   "Source": "field_work_reference",
+    "DLLid": "field_dll_identifier",
+    "Rights": "field_rights"
+}

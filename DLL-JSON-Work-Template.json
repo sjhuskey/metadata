@@ -1,12 +1,9 @@
 {
     "@context": {
+        "@base": "https://hobbes.rccc.ou.edu/dll-biblio",
         "madsrdf": "http://www.loc.gov/mads/rdf/v1#",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "About": {
-            "@id": "rdf:about",
-            "@type": "@id"
-        },
         "Title": "madsrdf:Title",
         "Variant": "madsrdf:hasVariant",
         "VariantTitle": "madsrdf:variantLabel",
