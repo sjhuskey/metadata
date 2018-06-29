@@ -32,7 +32,6 @@
     
 
     <mads:recordInfo>
-        <mads:recordContentSource authority="">DLC<!-- Don't know what to put here. --></mads:recordContentSource>
         <mads:recordCreationDate encoding="iso8601">[node:created:short]</mads:recordCreationDate>
         <mads:recordChangeDate encoding="iso8601">[node:changed:short]</mads:recordChangeDate>
         <mads:recordIdentifier>[node:feeds-item-guid]</mads:recordIdentifier>

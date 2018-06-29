@@ -4,7 +4,6 @@
         "dcterms": "http://purl.org/dc/terms/",
         "foaf": "http://xmlns.com/foaf/spec/",
         "frbr": "http://purl.org/vocab/frbr/core#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "schema": "http://schema.org/",
         "Title": "dcterms:title",
         "Author": "dcterms:creator",
@@ -27,7 +26,7 @@
     "Publisher": "field_publisher",
     "AccessDate": "field_access_date",
     "Repository": "field_repository_source",
-   "Source": "field_work_reference",
+    "Source": "field_work_reference",
     "DLLid": "field_dll_identifier",
     "Rights": "field_rights"
 }

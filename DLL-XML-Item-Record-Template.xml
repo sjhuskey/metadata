@@ -19,11 +19,9 @@
         <dcterms:URI> field_original_uri</dcterms:URI>
     </dcterms:identifier>
     <schema:Library>field_repository_source</schema:Library>
-    <dcterms:identifier>
-        <dcterms:URI> field_dll_uri</dcterms:URI>
-    </dcterms:identifier>
-    <dcterms:identifier>
-        <dcterms:URI> field_dll_identifier</dcterms:URI>
-    </dcterms:identifier>
     <dcterms:rights>field_rights</dcterms:rights>
+    <dcterms:identifier>
+        <dcterms:URI> field_dll_page_link</dcterms:URI>
+    </dcterms:identifier>
+    <dcterms:identifier>field_dll_identifier</dcterms:identifier>
 </xml>

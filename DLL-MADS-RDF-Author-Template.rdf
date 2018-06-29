@@ -89,8 +89,7 @@
         <!-- Value: field_cts_urn -->
         <madsrdf:idValue>field_cts_urn</madsrdf:idValue>
       </madsrdf:Identifier>
-    </madsrdf:hasIdentifier> <madsrdf:isMemberOfMADSScheme
-      rdf:resource="http://id.loc.gov/authorities/names"/>
+    </madsrdf:hasIdentifier>
     <madsrdf:adminMetadata>
       <ri:RecordInfo>
         <ri:creationDate>[node:created:short]</ri:creationDate>

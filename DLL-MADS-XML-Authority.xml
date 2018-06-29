@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://www.loc.gov/mads/ http://www.loc.gov/standards/mads/mads.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-2.xsd"
     version="2.0">
     <!-- The value for the xlink attribute should be the node title. -->
-    <mads:authority xlink:href="title">
+    <mads:authority xlink:href="dll_page_link">
         <mads:name type="personal" authority="naf">
             <mads:namePart>field_authorized_name</mads:namePart>
         </mads:name>
@@ -16,14 +16,14 @@
         <!-- The following three fields are tricky. Where there are known birth and death dates, they are listed. Otherwise, we use a floruit value, or a general century. -->
         <mads:temporal point="start">field_author_birth_date</mads:temporal>
         <mads:temporal point="end">field_author_death_date</mads:temporal>
-        
+
         <!-- Will have to account for the split we're going to do on this field. -->
         <mads:temporal qualifier="approximate">field_floruit_active</mads:temporal>
-        
+
         <!-- This should be one of three values: Classical, Medieval, NeoLatin. -->
         <mads:temporal qualifier="approximate">field_time_period_authorities</mads:temporal>
     </mads:authority>
-    
+
     <!-- The following variants may or may not have values, or they might have multiple values. -->
     <mads:variant type="other" lang="lat">
         <mads:name type="personal">
@@ -45,9 +45,8 @@
             <mads:namePart>field_also_known_as</mads:namePart>
         </mads:name>
     </mads:variant>
-    
+
     <mads:identifier type="dll">field_dll_identifier</mads:identifier>
-    <!-- I need to figure out what to do here. In any case, the value is composed of other fields. The one listed here is for a specific author (Alcuin). -->
     <mads:identifier type="lccn">field_loc_id</mads:identifier>
     <!-- Not every record will have a stoa number. -->
     <mads:identifier type="stoa">field_stoa_number</mads:identifier>
@@ -62,9 +61,9 @@
     <mads:url displayLabel="Library of Congress Authorities Page">field_locsource</mads:url>
     <!-- Not every record will have a VIAF URL. -->
     <mads:url displayLabel="VIAF URL">field_viaf_source</mads:url>
-    
+    <mads:identifier type="cts"><!-- This doesn't exist yet. --></mads:identifier>
+
     <mads:recordInfo>
-        <mads:recordContentSource authority="">DLC<!-- Don't know what to put here. --></mads:recordContentSource>
         <mads:recordCreationDate encoding="iso8601">[node:created:short]</mads:recordCreationDate>
         <mads:recordChangeDate encoding="iso8601">[node:changed:short]</mads:recordChangeDate>
         <mads:recordIdentifier>[node:feeds-item-guid]</mads:recordIdentifier>

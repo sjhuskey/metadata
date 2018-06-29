@@ -4,7 +4,7 @@
     xmlns:foaf="http://xmlns.com/foaf/spec/" xmlns:frbr="http://purl.org/vocab/frbr/core#" xmlns:schema="http://schema.org/"
     xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
     <!-- Value of @rdf:about should be field_dll_uri -->
-    <rdf:Description rdf:about="field_dll_uri">
+    <rdf:Description rdf:about="field_dll_page_link">
         <dcterms:title>field_record_title</dcterms:title>
         <dcterms:type>digitized book</dcterms:type>
         <dcterms:creator><!-- It would be great to use the field_authorized_name value for the entity referenced through field_dll_creator --><!-- Also, there may be > 1 creator. --></dcterms:creator>
@@ -25,16 +25,7 @@
             </dcterms:URI>
         </dcterms:identifier>
         <schema:Library>field_repository_source</schema:Library>
-        <dcterms:identifier>
-            <dcterms:URI>
-                <rdf:value>field_dll_uri</rdf:value>
-            </dcterms:URI>
-        </dcterms:identifier>
-        <dcterms:identifier>
-            <dcterms:URI>
-                <rdf:value>field_dll_identifier</rdf:value>
-            </dcterms:URI>
-        </dcterms:identifier>
         <dcterms:rights>field_rights</dcterms:rights>
+        <dcterms:identifier>field_dll_identifier</dcterms:identifier>
     </rdf:Description>
 </rdf:RDF>

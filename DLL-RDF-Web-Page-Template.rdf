@@ -3,7 +3,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:frbr="frbr:exemplarOf"
     xmlns:schema="http://schema.org/">
     <!-- Value of @rdf:about should be field_dll_uri -->
-    <rdf:Description rdf:about="field_dll_uri">
+    <rdf:Description rdf:about="field_dll_page_link">
         <dcterms:title>field_record_title</dcterms:title>
         <dcterms:type>web page</dcterms:type>
         <dcterms:creator><!-- It would be great to use the field_authorized_name value for the entity referenced through field_dll_creator --></dcterms:creator>
@@ -20,15 +20,6 @@
         <dcterms:date>field_access_date</dcterms:date>
         <schema:WebSite>field_repository_source</schema:WebSite>
         <dcterms:rights>field_rights</dcterms:rights>      
-        <dcterms:identifier>
-            <dcterms:URI>
-                <rdf:value>field_dll_uri</rdf:value>
-            </dcterms:URI>
-        </dcterms:identifier>
-        <dcterms:identifier>
-            <dcterms:URI>
-                <rdf:value>field_dll_identifier</rdf:value>
-            </dcterms:URI>
-        </dcterms:identifier>
+        <dcterms:identifier>field_dll_identifier</dcterms:identifier>
     </rdf:Description>
 </rdf:RDF>
