@@ -30,7 +30,7 @@
             <mads:namePart>field_author_name_latin</mads:namePart>
         </mads:name>
     </mads:variant>
-    <mads:variant type="other" lang="eng">
+    <mads:variant type="other" lang="en">
         <mads:name type="personal">
             <mads:namePart>field_author_name_english</mads:namePart>
         </mads:name>
@@ -45,6 +45,31 @@
             <mads:namePart>field_also_known_as</mads:namePart>
         </mads:name>
     </mads:variant>
+    <mads:variant lang="es">
+        <mads:name type="personal">
+            <mads:namePart xml:lang="es">field_bne_url:title</mads:namePart>
+        </mads:name>
+    </mads:variant>
+    <mads:variant lang="fr">
+        <mads:name type="personal">
+            <mads:namePart xml:lang="fr">field_bnf_url:title</mads:namePart>
+        </mads:name>
+    </mads:variant>
+    <mads:variant lang="de">
+        <mads:name type="personal">
+            <mads:namePart xml:lang="de">field_dnb_url:title</mads:namePart>
+        </mads:name>
+    </mads:variant>
+    <mads:variant lang="it">
+        <mads:name type="personal">
+            <mads:namePart xml:lang="it">field_iccu_url:title</mads:namePart>
+        </mads:name>
+    </mads:variant>
+    <mads:variant>
+        <mads:name type="personal">
+            <mads:namePart xml:lang="en">field_isni_url:title</mads:namePart>
+        </mads:name>
+    </mads:variant>
 
     <mads:identifier type="dll">field_dll_identifier</mads:identifier>
     <mads:identifier type="lccn">field_loc_id</mads:identifier>
@@ -52,8 +77,9 @@
     <mads:identifier type="stoa">field_stoa_number</mads:identifier>
     <!-- Not every record will have a phi number. -->
     <mads:identifier type="phi">field_phi_number</mads:identifier>
+    <mads:identifier type="cts"><!-- This doesn't exist yet. --></mads:identifier>
     <!-- Not every record will have a viaf number. -->
-    <mads:identifier type="viaf">field_viaf_id</mads:identifier>
+    <mads:identifier type="viaf">field_viaf_id</mads:identifier>   
     <mads:url displayLabel="DLL Catalog Link">field_dll_page_link</mads:url>
     <!-- Not every record will have a LOC Catalog Page. -->
     <mads:url displayLabel="Library of Congress Catalog Page">field_lofc_uri</mads:url>
@@ -61,7 +87,15 @@
     <mads:url displayLabel="Library of Congress Authorities Page">field_locsource</mads:url>
     <!-- Not every record will have a VIAF URL. -->
     <mads:url displayLabel="VIAF URL">field_viaf_source</mads:url>
-    <mads:identifier type="cts"><!-- This doesn't exist yet. --></mads:identifier>
+    <mads:url displayLabel="BNE URL"><!-- field_bne_url:url--></mads:url>
+    <mads:url displayLabel="BNF URL"><!-- field_bnf_url:url --></mads:url>
+    <mads:url displayLabel="DNB URL"><!-- field_dnb_url:url --></mads:url>
+    <mads:url displayLabel="ICCU URL"><!-- field_iccu_url:url --></mads:url>
+    <mads:url displayLabel="ISNI URL"><!-- field_isni_url:url --></mads:url>
+    <mads:url displayLabel="Wikidata URL"><!-- field_wikidata_url:url --></mads:url>
+    <mads:url displayLabel="English Wikipedia URL"><!-- field_wikipedia:url --></mads:url>
+    <mads:url displayLabel="WorldCat Identity URL"><!-- field_worldcat_identity:url --></mads:url>
+    
 
     <mads:recordInfo>
         <mads:recordCreationDate encoding="iso8601">[node:created:short]</mads:recordCreationDate>

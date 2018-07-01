@@ -9,7 +9,16 @@
         "EnglishVariant": "madsrdf:variantLabel",
         "NativeLanguageVariant": "madsrdf:variantLabel",
         "AlsoKnownAs": "madsrdf:variantLabel",
+        "BNEName": "madsrdf:variantLabel",
+        "BNFName": "madsrdf:variantLabel",
+        "DNBName": "madsrdf:variantLabel",
+        "ICCUName": "madsrdf:variantLabel",
+        "ISNIName": "madsrdf:variantLabel",
         "ExactExternalAuthority": "madsrdf:hasExactExternalAuthority",
+        "BirthDate": "madsrdf:birthDate",
+        "DeathDate": "madsrdf:deathDate",
+        "Floruit": "madsrdf:temporal",
+        "TimePeriod": "madsrdf:temporal",
         "Identifier": {
             "@id": "madsrdf:Identifier",
             "@type": "@id"
@@ -28,10 +37,19 @@
             "LatinVariant": "field_author_name_latin",
             "EnglishVariant": "field_author_name_english",
             "NativeLanguageVariant": "field_author_name_native_languag",
-            "AlsoKnownAs": "field_also_known_as"
+            "AlsoKnownAs": "field_also_known_as",
+            "BNEName": "field_bne_url:title",
+            "BNFName": "field_bnf_url:title",
+            "DNBName": "field_dnb_url:title",
+            "ICCUName": "field_iccu_url:title",
+            "ISNIName": "field_isni_url:title"
         }
     },
-    "ExactExternalAuthority": "[field_viaf_source,field_locsource,field_lofc_uri]",
+    "BirthDate": "field_author_birth_date",
+    "DeathDate": "field_author_death_date",
+    "Floruit": "field_floruit_active",
+    "TimePeriod": "field_time_period_authorities",
+    "ExactExternalAuthority": "[field_viaf_source,field_locsource,field_lofc_uri,field_bne_url:url,field_bnf_url:url,field_dnb_url:url,field_iccu_url:url,field_isni_url:url,field_wikidata_url:url,field_wikipedia:url,field_worldcat_identity:url]",
     "Identifier": {
         "DLLid": "field_dll_identifier",
         "VIAFid": "field_viaf_id",

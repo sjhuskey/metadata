@@ -34,6 +34,40 @@
         <madsrdf:variantLabel xml:lang="en">field_also_known_as</madsrdf:variantLabel>
       </madsrdf:PersonalName>
     </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+        <madsrdf:variantLabel xml:lang="es">field_bne_url:title</madsrdf:variantLabel>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+        <madsrdf:variantLabel xml:lang="fr">field_bnf_url:title</madsrdf:variantLabel>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+        <madsrdf:variantLabel xml:lang="de">field_dnb_url:title</madsrdf:variantLabel>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+        <madsrdf:variantLabel xml:lang="it">field_iccu_url:title</madsrdf:variantLabel>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+        <madsrdf:variantLabel xml:lang="en">field_isni_url:title</madsrdf:variantLabel>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:birthDate>field_author_birth_date</madsrdf:birthDate>
+    <madsrdf:deathDate>field_author_death_date</madsrdf:deathDate>
+    <madsrdf:temporal>field_floruit_active</madsrdf:temporal>
+    <madsrdf:temporal>field_time_period_authorities</madsrdf:temporal>
     <!-- URLs/URIs -->
     <!-- VIAF (field_viaf_source) -->
     <madsrdf:hasExactExternalAuthority rdf:resource="field_viaf_source"/>
@@ -41,6 +75,14 @@
     <madsrdf:hasExactExternalAuthority rdf:resource="field_locsource"/>
     <!-- http://id.loc.gov/authorities/names/ (field_lofc_uri) -->
     <madsrdf:hasExactExternalAuthority rdf:resource="field_lofc_uri"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="field_bne_url:url"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="field_bnf_url:url"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="field_dnb_url:url"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="field_iccu_url:url"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="field_isni_url:url"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="field_wikidata_url:url"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="field_wikipedia:url"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="field_worldcat_identity:url"/>
     <!-- ID's -->
     <!-- DLL -->
     <madsrdf:hasIdentifier>
