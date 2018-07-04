@@ -2,7 +2,6 @@
     "@context": {
         "@base": "https://hobbes.rccc.ou.edu/dll-biblio",
         "dcterms": "http://purl.org/dc/terms/",
-        "foaf": "http://xmlns.com/foaf/spec/",
         "frbr": "http://purl.org/vocab/frbr/core#",
         "schema": "http://schema.org/",
         "Title": "dcterms:title",
