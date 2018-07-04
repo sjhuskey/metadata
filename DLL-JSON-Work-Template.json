@@ -18,6 +18,7 @@
         },
         "AttributedAuthorName": "madsrdf:Name",
         "Dubious": "madsrdf:hasChararacteristic",
+        "TextGroup": "madsrdf:isMemberOfMADSCollection",
         "Identifier": {
             "@id": "madsrdf:Identifier",
             "@type": "@id"
@@ -37,6 +38,7 @@
         "Attribution": "This work has been attributed by some to this author.",
         "AttributedAuthorName": "field_attributed_to"
     }},
+    "TextGroup": "field_text_group",
     "Identifier": {
         "DLLid": "field_dll_identifier",
         "STOAid": "field_stoa_number",
